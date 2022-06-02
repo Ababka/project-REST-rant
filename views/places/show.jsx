@@ -7,13 +7,13 @@ function new_form (data) {
       message = (
         <h4 className="alert-danger">
           {data.message}
-        </h4>
+        </h4>,
+      {message}
       )
     }
     return (
       <Def>
       <main>
-      {message}
         <div className="row">
           <div className="col-sm-6">
             <img src={data.place.pic} alt={data.place.name} />
@@ -30,4 +30,4 @@ function new_form (data) {
     )
 }
 
-module.exports = new_form
+module.exports = show
